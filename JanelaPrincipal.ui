@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaPrincipal</class>
+ <widget class="QMainWindow" name="JanelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1011</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>JanelaPrincipal</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="WidgetGLSuperficie" name="widgetVisaoPrincipal" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>641</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grupoOrtogonais">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>291</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Projeções ortogonais</string>
+    </property>
+    <widget class="VisOrtoWidget" name="projXY" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>291</width>
+       <height>200</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="VisOrtoWidget" name="projYZ" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>230</y>
+       <width>291</width>
+       <height>200</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="VisOrtoWidget" name="projZX" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>440</y>
+       <width>291</width>
+       <height>200</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="STWidget" name="widgetControleST" native="true">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>510</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>161</width>
+      <height>161</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>341</width>
+      <height>66</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="grupoPrecisao">
+       <property name="title">
+        <string>Precisão</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="labelS">
+            <property name="text">
+             <string>s</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinPrecisaoS"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelT">
+            <property name="text">
+             <string>t</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinPrecisaoT"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="grupoControle">
+       <property name="title">
+        <string>Pontos de controle</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="labelI">
+            <property name="text">
+             <string>i</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinI"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelJ">
+            <property name="text">
+             <string>j</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinJ"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>540</y>
+      <width>104</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Parâmetros</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelParamS">
+           <property name="text">
+            <string>s</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="spinParamS">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="labelParamT">
+           <property name="text">
+            <string>t</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinParamT">
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>STWidget</class>
+   <extends>QWidget</extends>
+   <header>stwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WidgetGLSuperficie</class>
+   <extends>QWidget</extends>
+   <header>widgetglsuperficie.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VisOrtoWidget</class>
+   <extends>QWidget</extends>
+   <header>visortowidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>spinPrecisaoS</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>JanelaPrincipal</receiver>
+   <slot>mudaPrecisaoS(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>551</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinPrecisaoT</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>JanelaPrincipal</receiver>
+   <slot>mudaPrecisaoT(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>554</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>mudaPrecisaoS(int)</slot>
+  <slot>mudaPrecisaoT(int)</slot>
+ </slots>
+</ui>
